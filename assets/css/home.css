@@ -1,0 +1,157 @@
+/* css for home page  */
+body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+main{
+	position: relative;
+	height: 90%;
+	width: 85%;
+	border-radius: 15px;
+	background: rgba(41, 118, 240, 0.6);
+	box-shadow: 0px 0px 38px 10px rgba(41, 118, 240, 0.6);
+}
+
+.title{
+	font-size: 5rem;
+	font-weight: 500;
+	text-align: center;
+	font-family:Verdana;
+	color: rgb(239, 32, 136);
+	text-decoration: important;
+}
+
+
+
+form{
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+input{
+	color: rgb(86, 37, 233);
+	text-align: center;
+	font-family: unset;
+	border: none;
+	padding: 15px;
+	border-radius: 30px;
+	background: #efefef;
+}
+
+.submit-btn{
+	padding: 15px;
+	border-radius: 50px;
+	width: 55px;
+	background: rgb(86, 37, 233);
+	color: white;
+	font-size: 1.1rem;
+	border: none;
+}
+
+hr{
+	color: white;
+}
+
+.desc{
+	margin-top: 1.5rem;
+	font-weight: 400;
+	color: #ef307c;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+#files-container{
+	width: 60%;
+	height: 60%;
+	overflow: auto;
+	border-radius: 20px;
+	background: rgba(244, 39, 131, 0.273);
+	margin: auto;
+}
+
+.fileDisplay{
+	width: 90%;
+	height: 20%;
+	margin: auto;
+	border-radius: 20px;
+	background: rgba(243, 28, 92, 0.649);
+	margin-top: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.6rem;
+	padding-left: 1.3rem;
+	padding-right: 1.3rem;
+}
+
+.fileName{
+	font-size: 1.5rem;
+	color: lightgrey;
+	width: 75%;
+}
+
+.file-open-btn{
+	background: rgb(87, 60, 241);
+	padding: 10px;
+	border-radius: 5px;
+	text-align: center;
+}
+.file-open-btn a{
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+}
+
+.deleteBtn{
+	margin-left: 5px;
+	color: rgb(81, 12, 3);
+	font-size: 1.3rem;
+	text-decoration: none;
+}
+
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Media Queries */
+@media screen and (max-width:700px) {
+	html{
+		font-size: 9px;
+	}
+	main{
+	    height: 80%;
+	    width: 90%;
+	    top: 5%;
+	    left: 5%;
+	}
+	#files-container{
+		width: 80%;
+	}
+	.file{
+		width: 90%;
+		height: 15%;
+		padding: 1.2rem;
+	}
+	.file-open-btn a{
+		font-size: 0.8rem;
+	}
+
+	.file-open-btn{
+		width: 3rem;
+		height: 2rem;
+		padding-top: 0.2rem;
+	}
+	.title{
+		margin-top: 1rem;
+	}
+}
